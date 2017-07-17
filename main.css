@@ -1,0 +1,9 @@
+
+
+body{
+   background: url(https://res.cloudinary.com/lamuchy/image/upload/v1499771759/elaine-casap-86020_c4b8xy.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+  }

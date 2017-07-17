@@ -1,0 +1,89 @@
+
+
+<html lang = "en">
+  
+  <head>
+    <title> freeCodeCamp : Build a Pomodoro Clock by Ichi </title>
+    <meta charset = "UTF-8">
+    <!--audio link-->
+    <audio id ="buzz" src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg" type="audio/ogg"></audio>
+    <!-- link to font awsome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- link to font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Leckerli+One" />
+     <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- ajax j query library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <style>
+    h1{
+        color: white;
+        font-family: "Leckerli One";
+        font-size: 57px;  
+        margin-top: 30px;
+        margin-bottom: 40px;
+     }
+    .active {
+        color: white;
+        font-family: "Leckerli One";
+        margin-top: 10px;
+        font-size:30px;
+    }
+    .countDown{
+        color: white;
+        margin-top: 5px;
+        font-size:100px;
+    }
+    
+    .tdCenter{
+      text-align: center;
+      color: #FFFF00;
+      font-size: 18px;
+      font-weight: bold;
+      font-family :Tahoma, Geneva, sans-serif;
+    }
+  
+    .upDown{
+      font-size: 30px;
+    }
+    footer{
+      margin-top: 40px;
+    }
+
+  </style>
+  </head>
+    
+  <body>
+    <div class="container text-center">
+      <h1>ichi pomodoro clock</h1>
+      <button type="button" class="btn btn-warning" id = "reset">Reset</button>
+      <button type="button" class="btn btn-info" id = "stop">Stop</button>
+      <div class ="active">session</div>
+      <h2 class = "btn countDown" id = "count">5</h2>  
+    </div>
+    
+    <table style="width:100%" >
+      <tr>
+        <td class = "tdCenter" id="breakLen"  >Break Length</td>
+        <td class = "tdCenter" id="sessionLen">Session Length</td>
+      </tr>
+      <tr>
+        <td class = "tdCenter">    
+        <a class = "btn upDown" id = 'minus1Break'><i class="fa fa-minus-square-o" aria-hidden="true"></i></a>
+        <a class = "upDown" id = "breakLenSet"> 10 </a>
+        <a class = "btn upDown" id = 'plus1Break' ><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>      
+      </td>
+        <td class = "tdCenter">
+        <a class = "btn upDown" id = 'minus1Session'><i class="fa fa-minus-square-o" aria-hidden="true"></i></a>
+        <a class = "upDown" id = "sessionLenSet"> 10 </a>
+        <a class = "btn upDown" id = 'plus1Session'><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>  
+        </td>
+      </tr>
+    </table>
+  
+  
+  <footer class = "text-center">
+      created by LaMuchy 77700112
+    </footer>
+  </body>
